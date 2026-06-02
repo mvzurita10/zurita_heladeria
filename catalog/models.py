@@ -6,7 +6,7 @@ class Sabor(models.Model):
     def __str__(self):
         return self.nombre_sabor
 
-class Helado(models.Model):
+class Producto(models.Model):
     sabor = models.ForeignKey(Sabor, on_delete=models.PROTECT, related_name="helados")
 
     def __str__(self):
